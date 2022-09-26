@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <title>Blog</title>
+</head>
+
+<body class="bg-light">
+
+
+    <!-- Header section start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">Blog</a>
+
+                <button onmouseover="this.style.backgroundColor ='azure'"
+                    onmouseout="this.style.backgroundColor ='ghostwhite'" id="back"
+                    class="btn btn-light px-4">Back</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Header section End -->
+
+
+
+    <!-- Main Section Start -->
+    <main class="container-md mt-5">
+        <h1><u>JavaScript important Question Answer:</u></h1>
+        <!-- question section start -->
+        <div class="card mt-5">
+            <div class="card-header">
+                Question: 1
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">What is Difference between local storage and session storage?</h4>
+                <p class="card-text"><b>local Storage:</b> is a property that allows JavaScript sites and apps to save
+                    key-value pairs in a web browser with no expiration date. This means the data stored in the browser
+                    will persist even after the browser window is closed.</p>
+                <p class="card-text">
+                    <b>Session storage:</b> is a popular choice when it comes to storing data on a browser. It enables
+                    developers to save and retrieve different values. Unlike local storage, session storage only keeps
+                    data for a particular session. The data is cleared once the user closes the browser window.
+                </p>
+
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                Question: 2
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">What is difference between global scope and block scope?</h4>
+                <p class="card-text"><b>The global scope:</b> is the context where everything in a Javascript program
+                    executes by default. This scope includes all variables, objects, and references that are not
+                    contained within a customized scope defined by a programmer. Global scope is the entire Javascript
+                    execution environment.</p>
+
+                <p class="card-title"> <b>The block scope:</b> restricts a variable's access to the block in which it is
+                    declared. The var keyword assigns a function scope to the variable. Unlike the var keyword, the let
+                    keyword allows the script to restrict access to the variable to the nearest enclosing block.</p>
+
+            </div>
+        </div>
+        <div class="card mt-3">
+            <div class="card-header">
+                Question: 3
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">How many ways we can get undefined in javascript?</h4>
+                <p class="card-text"><b>Undefined comes</b> about when we try to access a variable that has been created
+                    but not given a value.
+                <ol>
+                    <li type="1">
+                        Not initialized value will get undefined.
+                    </li>
+                    <li type="1">
+                        Function with no returns will be undefined.
+                    </li>
+                    <li type="1">
+                        If we don’t send all parameter than will be undefined.
+                    </li>
+                    <li type="1">
+                        If we don’t send parameter right way we will get Undefined.
+                    </li>
+                    <li type="1">
+                        Function with no returns will be undefined.
+                    </li>
+                    <li type="1">
+                        If return has nothing than return will send undefined.
+                    </li>
+                    <li type="1">
+                        If property doesn’t exist in a object that will be undefined.
+                    </li>
+                    <li type="1">
+                        Index doesn’t exist in a array that will be undefined. it means out of range of index will be
+                        undefined.
+                    </li>
+                </ol>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="card mt-3 mb-5">
+            <div class="card-header">
+                Question: 4
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">What is javascript event loop?</h4>
+                <p class="card-text"> <mark>JavaScript has a runtime model based on an event loop, which is responsible
+                        for executing the code, collecting and processing events, and executing queued
+                        sub-tasks.</mark><br>
+                    <b>An event loop</b> is often times the “main” of a program that handles events. If
+                    written a program that user knows it will exit when it is done. Programs that run
+                    indefinitely like UI applications, video games, web servers, etc will have some form of an event
+                    loop.
+                    <br>
+                    <br>
+
+                    <b>For instance</b> when a program running a UI. If it's idle and we check the
+                    running
+                    processes it's likely not going to be eating up a ton of processing time by continually looping. It
+                    can either be utterly silent or it may be taking up a fraction of a percent of the CPUs time. But if
+                    we go and hit a button the program is going to wake up and do something. This is ran by an event
+                    loop. Clicking that button fired an event which got processed by the event loop which called the
+                    buttons onClick event handler.
+
+                    They're fairly primitive, but they're highly useful.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- question section End -->
+    </main>
+    <!-- Main Section End -->
+
+
+    <footer class="mt-5 bg-dark mb-0 py-2">
+        <p class="text-light text-center">Copyright 2022 By me.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+    <!-- script Adding for Switching to menu Start -->
+    <script>
+
+        document.getElementById('back').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        })
+
+    </script>
+    <!-- script Adding for Switching to menu End-->
+
+</body>
+
+</html>
